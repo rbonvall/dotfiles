@@ -1,0 +1,78 @@
+ignore *
+unignore from To From CC Date Subject User-Agent
+macro index \cb |urlview\n 'call urlview to extract URLs out of a message'
+macro pager \cb |urlview\n 'call urlview to extract URLs out of a message'
+macro index \ch '|lynx -stdin<enter>' 'ver HTML cochino'
+macro pager \ch '|lynx -stdin<enter>' 'ver HTML cochino'
+
+set visual="vim +'set tw=75'"
+set editor="vim +'set tw=75'"
+set attribution="%n dijo:"
+set edit_headers=yes
+set from="rbonvall@gmail.com"
+set hostname=gmail.com
+
+# from http://www.elho.net/mutt/maildir/
+set mbox_type=Maildir
+set folder="~/Maildir"
+set mask="!^\\.[^.]"
+set mbox="~/Maildir"
+set record="=.Sent"
+set postponed="=.Drafts"
+set spoolfile="~/Maildir"
+set move=no
+#set bounce=yes
+
+# from http://www.elho.net/mutt/maildir/
+mailboxes `echo -n "+ "; find ~/Maildir -maxdepth 1 -type d -name ".*" -printf "+'%f' "`
+
+# from http://www.elho.net/mutt/maildir/
+macro index c "<change-folder>?<toggle-mailboxes>" "open a different folder"
+macro pager c "<change-folder>?<toggle-mailboxes>" "open a different folder"
+macro index C "<copy-message>?<toggle-mailboxes>" "copy a message to a mailbox"
+macro index m "<save-message>?<toggle-mailboxes>" "move a message to a mailbox"
+macro compose A "<attach-message>?<toggle-mailboxes>" "attach message(s) to this message"
+
+set realname="Roberto Bonvallet"
+set signature="~/.Sig"
+set sig_dashes=yes
+set quote_regexp="^([ \t]*[\|>}#])+"
+
+set weed=yes
+set pager_index_lines=5
+
+set assumed_charset="us-ascii:utf-8"
+set send_charset="us-ascii:utf-8"
+set config_charset="us-ascii:utf-8"
+
+set pgp_decode_command="gpg %?p?--passphrase-fd 0? --no-verbose --batch --output - %f"
+set pgp_verify_command="gpg --no-verbose --batch --output - --verify %s %f"
+set pgp_decrypt_command="gpg --passphrase-fd 0 --no-verbose --batch --output - %f"
+set pgp_sign_command="gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --detach-sign --textmode %?a?-u %a? %f"
+set pgp_clearsign_command="gpg --no-verbose --batch --output - --passphrase-fd 0 --armor --textmode --clearsign %?a?-u %a? %f"
+set pgp_encrypt_only_command="pgpewrap gpg -v --batch --output - --encrypt --textmode --armor --always-trust -- -r %r -- %f"
+set pgp_encrypt_sign_command="pgpewrap gpg --passphrase-fd 0 -v --batch --output - --encrypt --sign %?a?-u %a? --armor --always-trust -- -r %r -- %f"
+set pgp_import_command="gpg --no-verbose --import -v %f"
+set pgp_export_command="gpg --no-verbose --export --armor %r"
+set pgp_verify_key_command="gpg --no-verbose --batch --fingerprint --check-sigs %r"
+set pgp_list_pubring_command="gpg --no-verbose --batch --with-colons --list-keys %r" 
+set pgp_list_secring_command="gpg --no-verbose --batch --with-colons --list-secret-keys %r" 
+set pgp_getkeys_command=""
+
+color hdrdefault red default
+color quoted blue default
+color signature magenta default
+color error red default
+color status brightwhite blue
+color indicator brightyellow black
+color tree magenta default
+color tilde magenta default
+color message cyan default
+color markers cyan default
+color attachment magenta default
+color search default green
+color header brightred default ^(From|Subject):
+color body magenta default "(ftp|http|https)://"
+color body magenta default "[-a-z_0-9.]+@[-a-z_0-9.]+"
+color underline brightgreen default
+
