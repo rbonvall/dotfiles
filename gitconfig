@@ -1,0 +1,11 @@
+[color]
+	ui = auto
+	branch = auto
+	status = auto
+	diff = auto
+[user]
+	email = rbonvall@gmail.com
+	name = Roberto Bonvallet
+[gui]
+	spellingdictionary = none
+
