@@ -1,0 +1,28 @@
+Host oliver
+    HostName oliver.labmc.inf.utfsm.cl
+    User rbonvall
+
+Host trux
+    HostName trux.homelinux.com
+    User rbonvall
+
+Host lxplus
+    HostName lxplus.cern.ch
+    User rbonvall
+
+Host ui
+    HostName ui.labmc.inf.utfsm.cl
+    User rbonvall
+
+Host marge
+    HostName marge.csrg.inf.utfsm.cl
+    User rbonvall
+
+Host bender
+    HostName bender.csrg.inf.utfsm.cl
+    User rbonvall
+
+Host leela
+    HostName leela.csrg.inf.utfsm.cl
+    User rbonvall
+
