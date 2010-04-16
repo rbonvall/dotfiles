@@ -30,3 +30,6 @@ Host leela
     HostName leela.csrg.inf.utfsm.cl
     User rbonvall
 
+Host 8o
+    HostName 8o.cl
+    User rbonvall
