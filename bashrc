@@ -8,6 +8,9 @@ do
 done
 
 export HISTCONTROL=ignoredups
+shopt -s histappend
+
+[ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 ssh_agent_prompt() {
   [ "$SSH_AGENT_PID" != '' ] && echo ' ⚡'
