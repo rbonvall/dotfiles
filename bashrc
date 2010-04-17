@@ -1,5 +1,7 @@
 #!/bin/bash
 
+[ -z "$PS1" ] && return
+
 for file in /etc/bashrc /etc/bash_completion ~/.bash_aliases
 do
   [ -f $file ] && . $file
