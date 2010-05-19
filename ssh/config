@@ -33,3 +33,8 @@ Host leela
 Host 8o
     HostName 8o.cl
     User rbonvall
+
+Host ssh2
+    HostName ssh2.inf.utfsm.cl
+    User rbonvall
+
