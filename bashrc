@@ -39,6 +39,10 @@ set_ps1() {
 }
 set_ps1
 
-export PYTHONSTARTUP="$HOME/.pythonrc"
+for file in ~/.bash_python
+do
+  [ -f $file ] && . $file
+done
 
 export LANG=es_CL.utf8
+

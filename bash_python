@@ -1,0 +1,9 @@
+#!/bin/bash
+
+export PYTHONSTARTUP="$HOME/.pythonrc"
+export WORKON_HOME="$HOME/codigo/envs"
+export PIP_REQUIRE_VIRTUALENV=true
+export PIP_RESPECT_VIRTUALENV=true
+export PIP_VIRTUALENV_BASE=$WORKON_HOME
+source $(which virtualenvwrapper.sh)
+
