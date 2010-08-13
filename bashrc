@@ -45,4 +45,6 @@ do
 done
 
 export LANG=es_CL.utf8
+export EDITOR=/usr/bin/vim
+export VISUAL=/usr/bin/vim
 
