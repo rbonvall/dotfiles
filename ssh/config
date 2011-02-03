@@ -19,7 +19,7 @@ Host gp01
     ForwardX11 yes
 
 Host marge
-    HostName marge.csrg.inf.utfsm.cl
+    HostName ssh.csrg.inf.utfsm.cl
     User rbonvall
 
 Host bender
