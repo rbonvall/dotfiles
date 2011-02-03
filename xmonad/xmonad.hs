@@ -110,7 +110,7 @@ myMouseBindings (XConfig {XMonad.modMask = modMask}) = M.fromList $
 -- The available layouts.  Note that each layout is separated by |||,
 -- which denotes layout choice.
 --
-myLayout = (ResizableTall nmaster delta ratio []) ||| tiled ||| Mirror tiled ||| Full
+myLayout = Full ||| (ResizableTall nmaster delta ratio []) ||| Mirror tiled
   where
      -- default tiling algorithm partitions the screen into two panes
      tiled   = Tall nmaster delta ratio
