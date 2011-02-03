@@ -38,5 +38,6 @@ Host ssh2
     HostName ssh2.inf.utfsm.cl
     User rbonvall
 
-ServerAliveInterval 250
+ServerAliveInterval 20
+ServerAliveCountMax 10
 
