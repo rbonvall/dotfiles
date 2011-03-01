@@ -38,6 +38,10 @@ Host ssh2
     HostName ssh2.inf.utfsm.cl
     User rbonvall
 
+Host crux
+    HostName crux.inf.utfsm.cl
+    User progra
+
 ServerAliveInterval 20
 ServerAliveCountMax 10
 
