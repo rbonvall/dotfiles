@@ -18,8 +18,8 @@ myModMask       = mod1Mask
 myNumlockMask   = mod2Mask
 myWorkspaces    = ["Eins", "Zwei", "Drei", "Vier", "Fuenf",
                    "Sechs", "Sieben", "Acht", "Neun"]
-myNormalBorderColor  = "#dddddd"
-myFocusedBorderColor = "#ff0000"
+myNormalBorderColor  = "#222222"
+myFocusedBorderColor = "#882222"
 
 ------------------------------------------------------------------------
 -- Key bindings. Add, modify or remove key bindings here.
