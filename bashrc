@@ -13,7 +13,7 @@ shopt -s histappend
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
 ssh_agent_prompt() {
-  ssh-add -l > /dev/null && echo ' ⚡'
+  ssh-add -l > /dev/null 2> /dev/null && echo ' ⚡'
 }
 
 set_ps1() {
