@@ -11,9 +11,8 @@ Host lxplus
     User rbonvall
 
 Host ui
-    HostName ui.labmc.inf.utfsm.cl
+    HostName ui.hpc.utfsm.cl
     User rbonvall
-    ForwardX11 yes
 
 Host gp01
     ForwardX11 yes
