@@ -35,7 +35,17 @@ set_ps1() {
   local SSH_AGENT="\[$SSH_AGENT_STYLE\]\$(ssh_agent_prompt)\[$NORMAL\]"
   local PROMPT="\[$PROMPT_STYLE\]\$\[$NORMAL\]"
 
-  export PS1="$HOST$SEPARATOR$WORK_DIR$BRANCH$SSH_AGENT$PROMPT "
+  export PS1="$WORK_DIR$BRANCH$SSH_AGENT$PROMPT "
+}
+set_simple_ps1() {
+  if [ $TERM != 'dumb' ]
+  then
+    local NORMAL="$(tput sgr0)"
+    local PROMPT_STYLE="$(tput setaf 6)"
+  fi
+  local PROMPT="\[$PROMPT_STYLE\]\$\[$NORMAL\]"
+
+  export PS1="$WORK_DIR$BRANCH$SSH_AGENT$PROMPT "
 }
 set_ps1
 
