@@ -1,5 +1,6 @@
 import XMonad
 import XMonad.Layout.ResizableTile
+import XMonad.Config.Gnome
 import System.Exit
 
 import qualified XMonad.StackSet as W
@@ -171,24 +172,24 @@ myStartupHook = do
 --          xmonad defaults
 main = xmonad defaults
 
-defaults = defaultConfig {
+defaults = gnomeConfig {
       -- simple stuff
         terminal           = myTerminal,
         focusFollowsMouse  = myFocusFollowsMouse,
         borderWidth        = myBorderWidth,
         modMask            = myModMask,
         numlockMask        = myNumlockMask,
-        workspaces         = myWorkspaces,
+        --workspaces         = myWorkspaces,
         normalBorderColor  = myNormalBorderColor,
         focusedBorderColor = myFocusedBorderColor,
 
       -- key bindings
         keys               = myKeys,
-        mouseBindings      = myMouseBindings,
+        mouseBindings      = myMouseBindings--,
 
       -- hooks, layouts
-        layoutHook         = myLayout,
-        manageHook         = myManageHook,
-        logHook            = myLogHook,
-        startupHook        = myStartupHook
+        --layoutHook         = myLayout,
+        --manageHook         = myManageHook,
+        --logHook            = myLogHook,
+        --startupHook        = myStartupHook
     }
