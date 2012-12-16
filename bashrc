@@ -43,9 +43,9 @@ set_simple_ps1() {
     local NORMAL="$(tput sgr0)"
     local PROMPT_STYLE="$(tput setaf 6)"
   fi
-  local PROMPT="\[$PROMPT_STYLE\]\$\[$NORMAL\]"
+  local PROMPT="\[$PROMPT_STYLE\]:;\[$NORMAL\]"
 
-  export PS1="$WORK_DIR$BRANCH$SSH_AGENT$PROMPT "
+  export PS1="$PROMPT "
 }
 set_ps1
 
