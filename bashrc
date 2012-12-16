@@ -7,7 +7,7 @@ do
   [ -f $file ] && . $file
 done
 
-export HISTCONTROL=ignoredups
+export HISTCONTROL=ignoreboth:erasedups
 shopt -s histappend
 
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
