@@ -10,6 +10,13 @@ alias ed='ed -p "ed> "'
 alias serve='python -m SimpleHTTPServer'
 alias curl='curl --silent'
 
+gimme () {
+    for i in $(seq $1)
+    do
+        echo
+    done
+}
+
 gh () {
     if [[ "$1" =~ / ]]
     then
