@@ -27,3 +27,11 @@ gh () {
     git clone $url
 }
 
+line () {
+    for i in $(seq $COLUMNS)
+    do
+        echo -n "─"
+    done
+    echo
+}
+
