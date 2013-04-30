@@ -16,3 +16,7 @@
 	sdiff = diff --staged
 [push]
 	default = upstream
+[url "git@github.com"]
+	insteadOf = gh
+[url "git@bitbucket.org"]
+	insteadOf = bb
