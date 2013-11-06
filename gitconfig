@@ -23,3 +23,5 @@
 	insteadOf = gh
 [url "git@bitbucket.org"]
 	insteadOf = bb
+
+# vim: noet sw=8 ft=gitconfig
