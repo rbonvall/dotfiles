@@ -26,8 +26,10 @@ set_ps1() {
     local BRANCH_STYLE="$(tput setaf 3)"
     local PROMPT_STYLE="$(tput setaf 6)"
     local SSH_AGENT_STYLE="$(tput setaf 1)"
+    local FAILURE_STYLE="$(tput setaf 1)"
   fi
 
+  local FAILURE="\[$FAILURE_STYLE\]\$([ "\$?" -ne 0 ] && echo '[✘]')\[$NORMAL\]"
   local HOST="\[$HOST_STYLE\]\h\[$NORMAL\]"
   local SEPARATOR="\[$SEPARATOR_STYLE\]:\[$NORMAL\]"
   local WORK_DIR="\[$WORK_DIR_STYLE\]\w\[$NORMAL\]"
@@ -35,7 +37,7 @@ set_ps1() {
   local SSH_AGENT="\[$SSH_AGENT_STYLE\]\$(ssh_agent_prompt)\[$NORMAL\]"
   local PROMPT="\[$PROMPT_STYLE\]\$\[$NORMAL\]"
 
-  export PS1="$WORK_DIR$BRANCH$PROMPT "
+  export PS1="$FAILURE$WORK_DIR$BRANCH$PROMPT "
 }
 set_simple_ps1() {
   if [ $TERM != 'dumb' ]
