@@ -17,6 +17,7 @@
 	sprea = "!git stash && git pull --rebase && git stash apply"
 	today = log --since=midnight --author='Roberto Bonvallet' --oneline
 	unstage = reset HEAD --
+	last = show HEAD
 [push]
 	default = upstream
 [url "git@github.com"]
