@@ -9,6 +9,7 @@ alias tree='tree -CA --dirsfirst'
 alias ed='ed -p "ed> "'
 alias serve='python -m SimpleHTTPServer'
 alias curl='curl --silent'
+alias yt='youtube-dl -f 18 -t -c'
 
 gimme () {
     for i in $(seq $1)
