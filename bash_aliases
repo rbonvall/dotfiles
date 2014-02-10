@@ -39,3 +39,7 @@ line () {
     echo
 }
 
+js_complete () {
+    eval "$(grunt --completion=bash)"
+    eval "$(npm completion)"
+}
