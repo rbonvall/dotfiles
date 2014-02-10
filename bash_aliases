@@ -21,6 +21,9 @@ gh () {
     if [[ "$1" =~ / ]]
     then
         url="https://github.com/$1"
+    elif [[ "$2" == / ]]
+    then
+        url="https://github.com/$1/$3"
     else
         url="git@github.com:rbonvall/$1"
     fi
