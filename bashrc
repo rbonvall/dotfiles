@@ -44,10 +44,12 @@ set_simple_ps1() {
   then
     local NORMAL="$(tput sgr0)"
     local PROMPT_STYLE="$(tput setaf 6)"
+    local FAILURE_STYLE="$(tput setaf 1)"
   fi
-  local PROMPT="\[$PROMPT_STYLE\]:;\[$NORMAL\]"
+  local FAILURE="\[$FAILURE_STYLE\]\$([ "\$?" -ne 0 ] && echo '[✘]')\[$NORMAL\]"
+  local PROMPT="\[$PROMPT_STYLE\]\$\[$NORMAL\]"
 
-  export PS1="$PROMPT "
+  export PS1="$FAILURE$PROMPT "
 }
 set_ps1
 
