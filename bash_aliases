@@ -12,6 +12,7 @@ alias curl='curl --silent'
 alias yt='youtube-dl -f 18 -t -c'
 
 gimme () {
+    local i
     for i in $(seq $1)
     do
         echo
@@ -19,6 +20,7 @@ gimme () {
 }
 
 gh () {
+    local url
     if [[ "$1" =~ / ]]
     then
         url="https://github.com/$1"
@@ -32,6 +34,7 @@ gh () {
 }
 
 line () {
+    local i
     for i in $(seq $COLUMNS)
     do
         echo -n "─"
