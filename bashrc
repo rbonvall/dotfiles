@@ -58,6 +58,10 @@ do
   [ -f $file ] && . $file
 done
 
+export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.cabal/bin
+export PATH=$PATH:$HOME/codigo/racket/racket/bin
+
 export LANG=es_CL.utf8
 export EDITOR=/usr/bin/vim
 export VISUAL=/usr/bin/vim
