@@ -10,6 +10,7 @@ alias ed='ed -p "ed> "'
 alias serve='python -m SimpleHTTPServer'
 alias curl='curl --silent'
 alias yt='youtube-dl -f 18 -t -c'
+alias vim=nvim
 
 gimme () {
     local i
