@@ -59,6 +59,8 @@ do
 done
 
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/.cargo/bin
 export PATH=$PATH:$HOME/.cabal/bin
 export PATH=$PATH:$HOME/codigo/racket/racket/bin
 
