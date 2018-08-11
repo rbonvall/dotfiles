@@ -22,7 +22,7 @@ set_ps1() {
     local NORMAL="$(tput sgr0)"
     local HOST_STYLE="$(tput setaf 0)"
     local SEPARATOR_STYLE="$(tput setaf 6)"
-    local WORK_DIR_STYLE="$(tput setaf 0)"
+    local WORK_DIR_STYLE="$(tput setaf 8)"
     local BRANCH_STYLE="$(tput setaf 3)"
     local PROMPT_STYLE="$(tput setaf 6)"
     local SSH_AGENT_STYLE="$(tput setaf 1)"
