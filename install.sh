@@ -15,4 +15,5 @@ ln -vs "$PWD"/bashrc       "$HOME"/.bashrc
 ln -vs "$PWD"/bash_aliases "$HOME"/.bash_aliases
 ln -vs "$PWD"/gitconfig    "$HOME"/.gitconfig
 ln -vs "$PWD"/inputrc      "$HOME"/.inputrc
+ln -vs "$PWD"/latexmkrc    "$HOME"/.latexmkrc
 ln -vs "$PWD"/user-dirs.dirs "$HOME"/.config/user-dirs.dirs
