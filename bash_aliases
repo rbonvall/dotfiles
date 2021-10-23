@@ -11,6 +11,7 @@ alias serve='python -m SimpleHTTPServer'
 alias curl='curl --silent'
 alias yt='youtube-dl -f 18 -t -c'
 alias vim=nvim
+alias up='docker-compose up'
 
 gimme () {
     local i
