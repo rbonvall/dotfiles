@@ -12,6 +12,7 @@ alias curl='curl --silent'
 alias yt='youtube-dl -f 18 -t -c'
 alias vim=nvim
 alias up='docker-compose up'
+alias install='sudo dnf install -y'
 
 gimme () {
     local i
