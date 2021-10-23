@@ -1,7 +1,6 @@
 #!/bin/bash
 
 alias df='df -h'
-alias yum='yum -y'
 alias mplayer='mplayer -really-quiet'
 alias am='alsamixer -c 0'
 alias cal='cal -m'
@@ -43,9 +42,4 @@ line () {
         echo -n "─"
     done
     echo
-}
-
-js_complete () {
-    eval "$(grunt --completion=bash)"
-    eval "$(npm completion)"
 }
