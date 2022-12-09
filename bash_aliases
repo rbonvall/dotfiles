@@ -12,6 +12,12 @@ alias yt='youtube-dl -f 18 -t -c'
 alias vim=nvim
 alias up='docker-compose up'
 alias install='sudo dnf install -y'
+alias ls='ls --color'
+alias tree1='tree -L 1'
+alias tree2='tree -L 2'
+alias tree3='tree -L 3'
+
+alias 64='arch -x86_64'
 
 gimme () {
     local i
