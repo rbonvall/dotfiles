@@ -21,7 +21,7 @@
 	publish   = "!git push -u origin $(git b)"
 	unpublish = "!git push origin :$(git b)"
 	last = show HEAD
-	work = config user.email rbonvallet@evernote.com
+	work = config user.email roberto.bonvallet@optconnect.com
 	fun  = config user.email roberto@mez.cl
 	r = rev-parse --show-toplevel
 [push]
