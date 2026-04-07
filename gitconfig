@@ -23,6 +23,7 @@
 	last = show HEAD
 	work = config user.email rbonvallet@evernote.com
 	fun  = config user.email roberto@mez.cl
+	r = rev-parse --show-toplevel
 [push]
 	default = upstream
 [url "git@github.com"]
